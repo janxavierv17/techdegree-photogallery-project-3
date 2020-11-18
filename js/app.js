@@ -1,5 +1,5 @@
-//npm install baguettebox.js --save
+const search = new Filter('search', 'data-caption');
+baguetteBox.run('.gallery',{
+    animation:'fade-in'
+});
 
-import baguetteBox from 'baguettebox.js';
-
-baguetteBox.run('.gallery');

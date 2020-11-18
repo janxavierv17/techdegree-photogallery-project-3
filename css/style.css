@@ -19,6 +19,8 @@ html {
    */
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /**
@@ -335,6 +337,31 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+.photo-gallery {
+  max-width: 1000px;
+  margin: 45px auto;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.photo-gallery #search {
+  margin: 0 auto;
+  width: 250px;
+}
+.photo-gallery .gallery {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px 20px;
+  padding-top: 20px;
+}
+.photo-gallery a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
