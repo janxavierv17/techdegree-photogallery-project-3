@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="photo-gallery">
-        <input type="search" name="search" id="search" placeholder="Search">       
-        <div class="gallery">
+        <input onkeyup="search()" type="text" name="search" id="search" placeholder="Search">       
+        <div class="gallery" id="gallery">
             <a href="resources/01.jpg" data-caption="Hay Bales
             I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
                 <img src="./resources/thumbnails/01.jpg" alt="First Image">
@@ -61,8 +61,8 @@
             </a>
         </div>
     </div>
-    <script src="./js/searchFilter.js"></script>
     <script src="./js/baguettebox.min.js"></script>​
     <script src="./js/app.js"></script>
+    <!-- <script src="./js/searchFilter.js"></script> -->
 </body>
 </html>
